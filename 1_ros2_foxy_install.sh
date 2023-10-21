@@ -25,15 +25,13 @@ sudo apt install -y \
 	python3-argcomplete \
 	ros-dev-tools \
 	nano git net-tools openssh-server \
-#	python3-pip \
-#	python3-rosdep2 \
-#	ros-foxy-gazebo-ros \
-#	ros-foxy-navigation2 \
-#	ros-foxy-nav2-bringup \
-#	ros-foxy-nav2-map-server \
-#	ros-foxy-gazebo-ros-pkgs \
-#	ros-foxy-cartographer-ros \
-#	python3-colcon-common-extensions \
+	python3-pip \
+	python3-rosdep2 \
+	ros-foxy-gazebo-ros \
+	ros-foxy-navigation2 \
+	ros-foxy-nav2-bringup \
+	ros-foxy-gazebo-ros-pkgs \
+	ros-foxy-cartographer-ros \
 
 
 echo "@@@@@ Sourcing the setup script @@@@@"
