@@ -3,6 +3,7 @@
 echo "@@@@@ install additional packages @@@@@"
 sudo apt install -y \
 	terminator \
+
 pip3 install -U pyserial transforms3d
 
 
