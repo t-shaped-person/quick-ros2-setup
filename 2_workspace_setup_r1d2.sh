@@ -29,13 +29,13 @@ echo "#ssh nuc@192.168.1.1" >> ~/.bashrc
 echo "@@@@@ ros2 packages clone and colcon build @@@@@"
 cd ~/ros2_ws/src
 git clone https://github.com/omorobot/omo_r1-foxy.git
+git clone https://github.com/YDLIDAR/ydlidar_ros2_driver.git
 git clone https://github.com/YDLIDAR/YDLidar-SDK.git
 mkdir ~/ros2_ws/src/YDLidar-SDK/build
 cd ~/ros2_ws/src/YDLidar-SDK/build
 cmake ..
 make
 sudo make install
-git clone https://github.com/YDLIDAR/ydlidar_ros2_driver.git
 cd ~/ros2_ws
 colcon build
 colcon build
