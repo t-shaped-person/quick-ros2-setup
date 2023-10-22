@@ -3,7 +3,8 @@
 echo "@@@@@ install additional packages @@@@@"
 sudo apt install -y \
 	tilix \
-# pip3 install -U argcomplete pyserial
+pip3 install -U pyserial \
+	transforms3d \
 
 
 echo "@@@@@ make workspace and colcon build @@@@@"
