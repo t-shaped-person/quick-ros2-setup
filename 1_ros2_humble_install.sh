@@ -22,16 +22,16 @@ sudo apt update
 sudo apt upgrade -y
 sudo apt install -y \
 	ros-humble-desktop \
-#	python3-argcomplete \
 	ros-dev-tools \
 	nano git net-tools openssh-server \
 	python3-pip \
 	python3-rosdep2 \
-	ros-foxy-gazebo-ros \
-	ros-foxy-navigation2 \
-	ros-foxy-nav2-bringup \
-	ros-foxy-gazebo-ros-pkgs \
-	ros-foxy-cartographer-ros \
+	ros-humble-gazebo-ros \
+	ros-humble-navigation2 \
+	ros-humble-nav2-bringup \
+	ros-humble-gazebo-ros-pkgs \
+	ros-humble-cartographer-ros \
+	python3-colcon-common-extensions \
 
 
 echo "@@@@@ Sourcing the setup script @@@@@"
