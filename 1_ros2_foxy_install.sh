@@ -31,7 +31,7 @@ sudo apt install -y \
 	ros-foxy-navigation2 \
 	ros-foxy-nav2-bringup \
 	ros-foxy-gazebo-ros-pkgs \
-	ros-foxy-cartographer-ros \
+	ros-foxy-cartographer-ros
 
 
 echo "@@@@@ Sourcing the setup script @@@@@"

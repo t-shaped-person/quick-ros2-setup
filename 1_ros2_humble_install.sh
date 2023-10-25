@@ -31,7 +31,7 @@ sudo apt install -y \
 	ros-humble-nav2-bringup \
 	ros-humble-gazebo-ros-pkgs \
 	ros-humble-cartographer-ros \
-	python3-colcon-common-extensions \
+	python3-colcon-common-extensions
 
 
 echo "@@@@@ Sourcing the setup script @@@@@"
