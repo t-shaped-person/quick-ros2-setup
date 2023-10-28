@@ -23,14 +23,14 @@ echo "alias sb='source ~/.bashrc'" >> ~/.bashrc
 echo "#export ROS_DOMAIN_ID=77 # 0~101" >> ~/.bashrc
 echo "#ssh jetson@192.168.1.1" >> ~/.bashrc
 
-# rosdep install -i --from-path src --rosdistro foxy -y
 
 echo "@@@@@ ros2 packages clone and colcon build @@@@@"
 cd ~/ros2_ws/src
 git clone https://github.com/omorobot/omo_r1mini-foxy.git
 git clone https://github.com/omorobot/ydlidar_ros2_driver.git
 git clone https://github.com/omorobot/YDLidar-SDK.git
-mkdir ~/ros2_ws/src/YDLidar-SDK/build
+cd ~/ros2_ws
+rosdep install -i --from-path src --rosdistro foxy -y
 cd ~/ros2_ws/src/YDLidar-SDK/build
 cmake ..
 make
