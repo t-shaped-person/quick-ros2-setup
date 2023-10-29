@@ -7,7 +7,6 @@ else
     echo 'KERNEL=="ttyTHS1", MODE:="0666", GROUP:="dialout", SYMLINK+="ttyMCU"' > /etc/udev/rules.d/98-omo-r1-mini-mcu.rules   
     echo '98-omo-r1-mini-mcu.rules created'
 fi
-
 if [ -f "/etc/udev/rules.d/98-omo-r1-mini-mcu-1.rules" ]; then
     echo "98-omo-r1-mini-mcu-1.rules file already exist."
 else 
@@ -23,7 +22,6 @@ else
     echo 'KERNEL=="ttyUSB*", ATTRS{idVendor}=="10c4", ATTRS{idProduct}=="ea60", MODE:="0666", GROUP:="dialout",  SYMLINK+="ttyLIDAR"' > /etc/udev/rules.d/97-omo-r1-mini-lidar.rules
     echo '97-omo-r1-mini-lidar.rules created'
 fi
-
 if [ -f "/etc/udev/rules.d/97-omo-r1-mini-lidar-1.rules" ]; then
     echo "97-omo-r1-mini-lidar-1.rules file already exist."
 else 
