@@ -27,7 +27,7 @@ echo "#ssh nuc@192.168.1.1" >> ~/.bashrc
 
 echo "@@@@@ ros2 packages clone and colcon build @@@@@"
 cd ~/ros2_ws/src
-git clone https://github.com/omorobot/omo_r1-foxy.git
+git clone https://github.com/omorobot/omo_r1-ros2.git -b dev_humble
 git clone https://github.com/YDLIDAR/ydlidar_ros2_driver.git -b humble
 git clone https://github.com/YDLIDAR/YDLidar-SDK.git
 cd ~/ros2_ws
