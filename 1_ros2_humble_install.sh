@@ -25,7 +25,7 @@ sudo apt install -y \
 	ros-dev-tools \
 	nano git net-tools openssh-server \
 	python3-pip \
-	python3-rosdep2 \
+#	python3-rosdep2 \
 	ros-humble-gazebo-ros \
 	ros-humble-navigation2 \
 	ros-humble-nav2-bringup \
@@ -37,6 +37,8 @@ sudo apt install -y \
 echo "@@@@@ Sourcing the setup script @@@@@"
 echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 source ~/.bashrc
+sudo rosdep init
+rosdep update
 
 
 echo -e "\033[31m"ros2 humble installation is done"\033[0m"
