@@ -21,8 +21,8 @@ echo "alias cs='cd ~/ros2_ws/src'" >> ~/.bashrc
 echo "alias cb='cd ~/ros2_ws && colcon build --symlink-install'" >> ~/.bashrc
 echo "alias eb='nano ~/.bashrc'" >> ~/.bashrc
 echo "alias sb='source ~/.bashrc'" >> ~/.bashrc
+echo "#alias nuc='ssh nuc@192.168.1.1'" >> ~/.bashrc
 echo "#export ROS_DOMAIN_ID=77 # 0~101" >> ~/.bashrc
-echo "#ssh nuc@192.168.1.1" >> ~/.bashrc
 
 
 echo "@@@@@ ros2 packages clone and colcon build @@@@@"
