@@ -25,7 +25,6 @@ sudo apt install -y \
 	ros-dev-tools \
 	nano git net-tools openssh-server \
 	python3-pip \
-#	python3-rosdep2 \
 	ros-humble-gazebo-ros \
 	ros-humble-navigation2 \
 	ros-humble-nav2-bringup \

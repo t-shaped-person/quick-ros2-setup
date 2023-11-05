@@ -23,7 +23,6 @@ sudo apt upgrade -y
 sudo apt install -y \
 	ros-foxy-desktop \
 	python3-argcomplete \
-	ros-dev-tools \
 	nano git net-tools openssh-server \
 	python3-pip \
 	python3-rosdep2 \
@@ -31,12 +30,15 @@ sudo apt install -y \
 	ros-foxy-navigation2 \
 	ros-foxy-nav2-bringup \
 	ros-foxy-gazebo-ros-pkgs \
-	ros-foxy-cartographer-ros
+	ros-foxy-cartographer-ros \
+	python3-colcon-common-extensions
 
 
 echo "@@@@@ Sourcing the setup script @@@@@"
 echo "source /opt/ros/foxy/setup.bash" >> ~/.bashrc
 source ~/.bashrc
+sudo rosdep init
+rosdep update
 
 
 echo -e "\033[31m"ros2 foxy installation is done"\033[0m"
