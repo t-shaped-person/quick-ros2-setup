@@ -31,7 +31,8 @@ sudo apt install -y \
 	ros-foxy-nav2-bringup \
 	ros-foxy-gazebo-ros-pkgs \
 	ros-foxy-cartographer-ros \
-	python3-colcon-common-extensions
+	python3-colcon-common-extensions \
+	joint_state_publisher_gui \
 
 
 echo "@@@@@ Sourcing the setup script @@@@@"
