@@ -32,7 +32,7 @@ sudo apt install -y \
 	ros-foxy-gazebo-ros-pkgs \
 	ros-foxy-cartographer-ros \
 	python3-colcon-common-extensions \
-	ros-foxy-joint_state_publisher_gui \
+	ros-foxy-joint-state-publisher-gui \
 
 
 echo "@@@@@ Sourcing the setup script @@@@@"
