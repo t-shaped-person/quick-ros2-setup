@@ -31,7 +31,7 @@ sudo apt install -y \
 	ros-humble-gazebo-ros-pkgs \
 	ros-humble-cartographer-ros \
 	python3-colcon-common-extensions \
-	ros-humble-joint_state_publisher_gui \
+	ros-humble-joint-state-publisher-gui \
 
 
 echo "@@@@@ Sourcing the setup script @@@@@"
