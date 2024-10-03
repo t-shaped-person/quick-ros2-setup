@@ -37,8 +37,8 @@ cmake ..
 make
 sudo make install
 cd ~/ros2_ws
-colcon build
-colcon build
+colcon build --symlink-install
+colcon build --symlink-install
 
 
 echo -e "\033[31m"workspace setup is done"\033[0m"
