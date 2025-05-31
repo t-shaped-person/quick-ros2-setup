@@ -23,7 +23,7 @@ sudo apt upgrade -y
 sudo apt install -y \
 	ros-foxy-desktop \
 	python3-argcomplete \
-	nano git net-tools openssh-server \
+	nano net-tools openssh-server \
 	python3-pip \
 	python3-rosdep2 \
 	ros-foxy-gazebo-ros \
