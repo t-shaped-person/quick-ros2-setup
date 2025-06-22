@@ -2,8 +2,11 @@
 
 echo "@@@@@ install additional packages @@@@@"
 sudo apt install -y \
-	terminator
-pip3 install -U pyserial transforms3d
+	tilix python3.12-venv
+cd ~
+python3 -m venv python3.12.3
+source ~/python3.12.3/bin/activate
+pip3 install -U pyserial transforms3d catkin_pkg
 
 
 echo "@@@@@ make workspace and colcon build @@@@@"
@@ -13,6 +16,7 @@ colcon build
 
 
 echo "@@@@@ modify bashrc - shotcut, export @@@@@"
+echo "source python3.12.3/bin/activate" >> ~/.bashrc
 echo "source ~/ros2_ws/install/setup.bash" >> ~/.bashrc
 echo "alias sai='sudo apt install'" >> ~/.bashrc
 echo "alias cw='cd ~/ros2_ws'" >> ~/.bashrc
@@ -20,19 +24,21 @@ echo "alias cs='cd ~/ros2_ws/src'" >> ~/.bashrc
 echo "alias cb='cd ~/ros2_ws && colcon build --symlink-install'" >> ~/.bashrc
 echo "alias eb='nano ~/.bashrc'" >> ~/.bashrc
 echo "alias sb='source ~/.bashrc'" >> ~/.bashrc
-echo "#alias jetson='ssh jetson@192.168.1.1'" >> ~/.bashrc
+echo "#alias nuc='ssh nuc@192.168.1.1'" >> ~/.bashrc
 echo "#export ROS_DOMAIN_ID=77 # 0~101" >> ~/.bashrc
+echo "export ROBOT_MODEL='R2MINI'" >> ~/.bashrc
+echo "export LIDAR_MODEL='TMINIPRO'" >> ~/.bashrc
+echo "export MOTOR_MODEL='NEW'" >> ~/.bashrc
 
 
 echo "@@@@@ ros2 packages clone and colcon build @@@@@"
 cd ~/ros2_ws/src
-git clone https://github.com/omorobot/omo_r1mini-foxy.git
-git clone https://github.com/omorobot/ydlidar_ros2_driver.git
-git clone https://github.com/omorobot/YDLidar-SDK.git
-# git clone https://github.com/YDLIDAR/ydlidar_ros2_driver.git
-# git clone https://github.com/YDLIDAR/YDLidar-SDK.git
+git clone https://github.com/omorobot/omo_r1-ros2.git -b dev_humble
+git clone https://github.com/YDLIDAR/ydlidar_ros2_driver.git -b humble
+# git clone https://github.com/omorobot/YDLidar-SDK.git
+git clone https://github.com/YDLIDAR/YDLidar-SDK.git
 cd ~/ros2_ws
-rosdep install -i --from-path src --rosdistro foxy -y
+# rosdep install -i --from-path src --rosdistro jazzy -y
 mkdir ~/ros2_ws/src/YDLidar-SDK/build
 cd ~/ros2_ws/src/YDLidar-SDK/build
 cmake ..

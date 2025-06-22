@@ -13,7 +13,7 @@ colcon build
 
 
 echo "@@@@@ modify bashrc - shotcut, export @@@@@"
-echo "source ~/ros2_ws/install/setup.bash">>~/.bashrc
+echo "source ~/ros2_ws/install/setup.bash" >> ~/.bashrc
 echo "alias sai='sudo apt install'" >> ~/.bashrc
 echo "alias cw='cd ~/ros2_ws'" >> ~/.bashrc
 echo "alias cs='cd ~/ros2_ws/src'" >> ~/.bashrc

@@ -31,7 +31,6 @@ sudo apt install -y \
 	ros-jazzy-cartographer-ros \
 	python3-colcon-common-extensions \
 	ros-jazzy-joint-state-publisher-gui \
-	ros-jazzy-gazebo-ros-gz \
 
 
 echo "@@@@@ Sourcing the setup script @@@@@"
