@@ -2,10 +2,8 @@
 
 echo "@@@@@ install additional packages @@@@@"
 sudo apt install -y \
-	tilix python3.12-venv
-cd ~
-python3 -m venv python3.12.3
-source ~/python3.12.3/bin/activate
+	tilix
+export PIP_BREAK_SYSTEM_PACKAGES=1
 pip3 install -U pyserial transforms3d catkin_pkg
 
 
@@ -16,7 +14,7 @@ colcon build
 
 
 echo "@@@@@ modify bashrc - shotcut, export @@@@@"
-echo "source python3.12.3/bin/activate" >> ~/.bashrc
+echo "export PIP_BREAK_SYSTEM_PACKAGES=1" >> ~/.bashrc
 echo "source ~/ros2_ws/install/setup.bash" >> ~/.bashrc
 echo "alias sai='sudo apt install'" >> ~/.bashrc
 echo "alias cw='cd ~/ros2_ws'" >> ~/.bashrc
