@@ -22,6 +22,7 @@ sudo apt update
 sudo apt upgrade -y
 sudo apt install -y \
 	ros-foxy-desktop \
+	ros-dev-tools \
 	python3-argcomplete \
 	nano net-tools openssh-server \
 	python3-pip \
@@ -38,8 +39,6 @@ sudo apt install -y \
 echo "@@@@@ Sourcing the setup script @@@@@"
 echo "source /opt/ros/foxy/setup.bash" >> ~/.bashrc
 source ~/.bashrc
-sudo rosdep init
-rosdep update
 
 
 echo -e "\033[31m"ros2 foxy installation is done"\033[0m"
