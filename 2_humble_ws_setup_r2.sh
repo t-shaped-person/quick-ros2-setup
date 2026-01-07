@@ -23,7 +23,7 @@ echo "alias eb='nano ~/.bashrc'" >> ~/.bashrc
 echo "alias sb='source ~/.bashrc'" >> ~/.bashrc
 echo "#alias nuc='ssh nuc@192.168.1.1'" >> ~/.bashrc
 echo "#export ROS_DOMAIN_ID=77 # 0~101" >> ~/.bashrc
-echo "export LIDAR_MODEL=TMINIPRO" >> ~/.bashrc
+echo "export LIDAR_MODEL=G2" >> ~/.bashrc
 echo "export MOTOR_MODEL=NEW" >> ~/.bashrc
 echo "export ROBOT_MODEL=R2" >> ~/.bashrc
 
