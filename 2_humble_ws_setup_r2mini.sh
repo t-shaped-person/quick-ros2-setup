@@ -3,7 +3,7 @@
 echo "@@@@@ install additional packages @@@@@"
 sudo apt install -y \
 	tilix
-pip3 install -U pyserial transforms3d
+pip3 install -U pyserial transforms3d flask
 pip3 install setuptools==58.2.0
 
 
