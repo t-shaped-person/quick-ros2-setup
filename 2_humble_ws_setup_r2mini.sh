@@ -44,6 +44,11 @@ colcon build --symlink-install
 colcon build --symlink-install
 
 
+cd ~
+echo -e '#!/bin/bash\n\ngnome-terminal -- bash -c "export LIDAR_MODEL="TMINIPRO" && export ROBOT_MODEL="R2MINI" && export MOTOR_MODEL="NEW" && source /opt/ros/humble/setup.bash && source ~/ros2_ws/install/setup.bash && ros2 launch omorobot_web web_launch.py; exec bash"' > ~/web_server.sh
+chmod 777 web_server.sh
+
+
 echo -e "\033[31m"workspace setup is done"\033[0m"
 echo -e "\033[31m"system is rebooting in 5sec"\033[0m"
 sleep 1
