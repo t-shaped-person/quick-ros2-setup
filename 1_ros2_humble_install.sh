@@ -26,10 +26,8 @@ sudo apt install -y \
 	ros-dev-tools \
 	nano net-tools openssh-server \
 	python3-pip \
-	ros-humble-gazebo-ros \
 	ros-humble-navigation2 \
 	ros-humble-nav2-bringup \
-	ros-humble-gazebo-ros-pkgs \
 	ros-humble-cartographer-ros \
 	python3-colcon-common-extensions \
 	ros-humble-joint-state-publisher-gui \
